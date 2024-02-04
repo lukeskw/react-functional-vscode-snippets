@@ -1,9 +1,10 @@
 {
-  "name": "ReactFunctionalSnippets",
-  "displayName": "React Functional Snippet",
+  "name": "ReactFunctionalSnippetForVSCODE",
+  "displayName": "React Functional Snippet for VS Code",
   "description": "Yet another RFC snippet, but this one actually works",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "publisher": "lukeskw",
+  "icon": "images/react128x128.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukeskw/react-functional-vscode-snippets"
@@ -15,8 +16,20 @@
   "contributes": {
     "snippets": [
       {
-        "language": "javascript, typescript",
-        "path": "./snippets/snippet.json"
+        "language": "javascript",
+        "path": "./snippets/snippet.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippet.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippet.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippet.code-snippets"
       }
     ]
   }

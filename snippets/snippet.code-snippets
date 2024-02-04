@@ -1,6 +1,6 @@
 {
   "React Functional Component": {
-		"scope": "javascript,typescript",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "rfc",
     "body": [
       "export function $1() {",
@@ -10,7 +10,7 @@
     "description": "Creates an RFC function"
   },
   "React Functional Component with Interface": {
-    "scope": "typescript",
+    "scope": "typescript,typescriptreact",
     "prefix": "rfci",
     "body": [
       "interface I$1 {",
@@ -24,7 +24,7 @@
     "description": "Creates an RFC function with an interface"
 	},
 	"React Functional Component with Type": {
-    "scope": "typescript",
+    "scope": "typescript,typescriptreact",
     "prefix": "rfct",
     "body": [
       "type $1Props = {",
