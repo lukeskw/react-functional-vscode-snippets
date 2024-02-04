@@ -56,6 +56,8 @@ export function $1(props: $1Props) {
 }
 ```
 
+### Download it [here](https://marketplace.visualstudio.com/items?itemName=Lukeskw.ReactFunctionalSnippetForVSCODE)
+
 ### License
 
 This extension is licensed under the MIT License.
