@@ -1,0 +1,40 @@
+{
+  "React Functional Component": {
+		"scope": "javascript,typescript",
+    "prefix": "rfc",
+    "body": [
+      "export function $1() {",
+      "  return ($2);",
+      "}"
+    ],
+    "description": "Creates an RFC function"
+  },
+  "React Functional Component with Interface": {
+    "scope": "typescript",
+    "prefix": "rfci",
+    "body": [
+      "interface I$1 {",
+      "  $2",
+      "}",
+      "",
+      "export function $1() {",
+      "  return ($4);",
+      "}"
+    ],
+    "description": "Creates an RFC function with an interface"
+	},
+	"React Functional Component with Type": {
+    "scope": "typescript",
+    "prefix": "rfct",
+    "body": [
+      "type $1Props = {",
+      "  $2",
+      "};",
+      "",
+      "export function $1(props: $1Props) {",
+      "  return ($4);",
+      "}"
+    ],
+    "description": "Creates an RFC function with a type"
+  }
+}

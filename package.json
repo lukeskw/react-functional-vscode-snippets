@@ -1,0 +1,23 @@
+{
+  "name": "ReactFunctionalSnippets",
+  "displayName": "React Functional Snippet",
+  "description": "Yet another RFC snippet, but this one actually works",
+  "version": "1.0.0",
+  "publisher": "lukeskw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukeskw/react-functional-vscode-snippets"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript, typescript",
+        "path": "./snippets/snippet.json"
+      }
+    ]
+  }
+}
