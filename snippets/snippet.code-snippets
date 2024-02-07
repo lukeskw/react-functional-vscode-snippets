@@ -1,4 +1,20 @@
 {
+  "Js console log": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cl",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Creates a console.log"
+  },
+  "Js console log with string": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cls",
+    "body": [
+      "console.log(\"$1\");"
+    ],
+    "description": "Creates a console.log"
+  },
   "React Functional Component": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "rfc",
@@ -7,7 +23,7 @@
       "  return ($2);",
       "}"
     ],
-    "description": "Creates an RFC function"
+    "description": "Creates a RFC function"
   },
   "React Functional Component with Interface": {
     "scope": "typescript,typescriptreact",
@@ -21,7 +37,7 @@
       "  return ($4);",
       "}"
     ],
-    "description": "Creates an RFC function with an interface"
+    "description": "Creates a RFC function with an interface"
 	},
 	"React Functional Component with Type": {
     "scope": "typescript,typescriptreact",
@@ -35,6 +51,46 @@
       "  return ($4);",
       "}"
     ],
-    "description": "Creates an RFC function with a type"
-  }
+    "description": "Creates a RFC function with a type"
+  },
+  "React Use State": {
+    "scope": "javascript, javascriptreact, typescript,typescriptreact",
+    "prefix": "ust",
+    "body": [
+      "const [ $1, set${1/(.*)/${1:/capitalize}/} ] = useState($2);"
+    ],
+    "description": "Creates a React Use State Snippet"
+  },
+	"React Use State with Types": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "ustt",
+    "body": [
+      "const [ $1, set${1/(.*)/${1:/capitalize}/} ] = useState<$2>($3);"
+
+    ],
+    "description": "Creates a Typed React Use State Snippet"
+  },
+	"React Use Effect": {
+    "scope": "javascript, javascriptreact, typescript,typescriptreact",
+    "prefix": "usef",
+    "body": [
+      "useEffect(() => {",
+      "	$1",
+      "}, [$2]);"
+    ],
+    "description": "Creates a React Use Effect Snippet"
+  },
+	"React Use Effect with Return": {
+    "scope": "javascript, javascriptreact, typescript,typescriptreact",
+    "prefix": "usefr",
+    "body": [
+      "useEffect(() => {",
+      "	$1",
+			"return () => {",
+			"	$2",
+			"}",
+      "}, [$3]);"
+    ],
+    "description": "Creates a React Use Effect with Return Snippet"
+  },
 }

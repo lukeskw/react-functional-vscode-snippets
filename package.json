@@ -2,7 +2,7 @@
   "name": "ReactFunctionalSnippetForVSCODE",
   "displayName": "React Functional Snippet for VS Code",
   "description": "Yet another RFC snippet, but this one actually works",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "lukeskw",
   "icon": "images/react128x128.png",
   "repository": {

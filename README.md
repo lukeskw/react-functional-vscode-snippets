@@ -14,17 +14,37 @@ When working with multiple placeholders ($1, $2, $3, $4) in the snippets, you ca
 
 | **Snippet** | **Renders**                          |
 | ----------- | ------------------------------------ |
+| `cl`        | `console.log()` with variable        |
+| `cls`       | `console.log()` with string          |
 | `rfc`       | A functional component               |
 | `rfci`      | A functional component w/ interfaces |
 | `rfct`      | A functional component w/ types      |
+| `ust`       | React Use State snippet              |
+| `ustt`      | Typed React Use State snippet        |
+| `usef`      | React Use Effect snippet             |
+| `usefr`     | React Use Effect with Return snippet |
 
 **Usage:**
 
-1. Type `rfc`.
-2. Press `Enter`.
-3. Name your component.
+1. Type the snippet prefix.
+2. Press `Enter` to use the snippet.
+3. Follow the instructions to fill in placeholders.
 
-### 1. React Functional Component (`rfc`)
+> Note: With Hooks, you should need to press Tab 2x to capitalize correctly.
+
+### 1. `console.log()` with variable (`cl`)
+
+```javascript
+console.log($1);
+```
+
+### 2. `console.log()` with string (`cls`)
+
+```javascript
+console.log("$1");
+```
+
+### 3. React Functional Component (`rfc`)
 
 ```typescript
 export function $1() {
@@ -32,7 +52,7 @@ export function $1() {
 }
 ```
 
-### 2. React Functional Component with Interfaces(`rfci`)
+### 4. React Functional Component with Interfaces(`rfci`)
 
 ```typescript
 interface I$1 {
@@ -44,7 +64,7 @@ export function $1() {
 }
 ```
 
-### 3. React Functional Component with types(`rfct`)
+### 5. React Functional Component with types(`rfct`)
 
 ```typescript
 type $1Props = {
@@ -54,6 +74,37 @@ type $1Props = {
 export function $1(props: $1Props) {
   return $4;
 }
+```
+
+### 6. React Use State Snippet(`ust`)
+
+```typescript
+const [ $1, set${1:capitalize} ] = useState($2);
+```
+
+### 7. Typed React Use State Snippet(`ustt`)
+
+```typescript
+const [ $1, set${1:capitalize} ] = useState<$2>($3);
+```
+
+### 8. React Use Effect Snippet(`usef`)
+
+```typescript
+useEffect(() => {
+  $1;
+}, [$2]);
+```
+
+### 9. React Use State with Return Snippet(`usefr`)
+
+```typescript
+useEffect(() => {
+  $1;
+  return () => {
+    $2;
+  };
+}, [$3]);
 ```
 
 ### Download it [here](https://marketplace.visualstudio.com/items?itemName=Lukeskw.ReactFunctionalSnippetForVSCODE)
